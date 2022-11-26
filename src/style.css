@@ -1,0 +1,102 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(image.jpg);
+  margin: 0;
+  background-color: black;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 5rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-auto-rows: minmax(7rem, auto) repeat(5, 6rem);
+ 
+}
+
+.calculator-grid > button {
+  background-color: #c7dae7;
+  cursor: pointer;
+  font-size: 3rem;
+  border: 2px solid white;
+  outline: none;
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+ grid-column: 1 / -1;
+ background-color: rgba(0, 0, 0, .75);
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ justify-content: space-around;
+ padding: 4rem;
+ word-wrap: break-word;
+ word-break: break-all;
+}
+
+.output .current-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .previous-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+.button{
+  width: 52px;
+  height: 52px;
+  margin: 10px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.button{
+  background-color: #c7dae7;
+}
+.button{
+  cursor: pointer;
+}
+.button{
+  font-size: 10px;
+}
+.button{
+  outline: 0;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: rgb(255, 0, 0);
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: rgb(197, 6, 245);
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: rgb(11, 248, 23);
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: rgb(243, 227, 4);
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: rgb(255, 94, 0);
+}
